@@ -1,0 +1,32 @@
+<div class="row row-content">
+    <div class="col-12 col-sm-9">
+        <h2>Marks according to students</h2>
+    </div>
+     <div class="col-12 col-sm-3">
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Student Name</th>
+                    <th>Student Rollno</th>
+                    <th>Item</th>
+                    <th>&nbsp;</th>
+                    <th>Student Marks</th>     
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let mark of marks let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{mark.student.name}}</td>
+                    <td>{{mark.student.rollno}}</td>
+                    <td>{{mark.name}}</td>
+                    <th>&nbsp;</th>
+                    <td>{{mark.marks}}</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

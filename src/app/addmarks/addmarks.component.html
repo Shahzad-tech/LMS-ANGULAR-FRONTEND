@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row row-content">
+        <div class="col-12 offset-md-2">
+           <h3>Please add new quiz or marks and their number</h3>
+        </div>
+         <div class="col-12 col-md-9 offset-md-2">
+             <form>
+                <div class="form-group row mt-5">
+                    <label for="sel1">Select Student from list:</label>
+                    <select class="form-control" [(ngModel)]="studentid" name="selected" >
+                      <option *ngFor="let student of _students let i=index" value ={{student._id}} >{{student.rollno}}&nbsp;{{student.name}}</option>
+                    </select>
+                  </div>
+                 <div class="form-group row">
+                     <label for="sname" class="col-md-2 col-form-label">Item Name:</label>
+                     <div class="col-md-10">
+                         <input type="text" class="form-control" id="sname" name="sname" placeholder="Name" [(ngModel)]="_name">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="rollno" class="col-md-2 col-form-label">Marks:</label>
+                     <div class="col-md-10">
+                         <input type="text" class="form-control" id="rollno" name="rollno" placeholder="Marks" [(ngModel)]="_marks">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <div class="offset-md-2 col-md-10">
+                         <button type="submit" class="btn btn-info offset-md-4" (click)="addmarksgeneral()">Add Data</button>
+                     </div>
+                 </div>
+             </form>
+    
+         </div>
+          <div class="col-12 col-md">
+         </div>
+    </div>
+    </div>
+    

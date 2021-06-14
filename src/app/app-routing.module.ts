@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {ConceptsComponent} from './concepts/concepts.component';
@@ -11,6 +11,10 @@ import { AddteacherComponent } from './addteacher/addteacher.component';
 import { AddstudentComponent } from './addstudent/addstudent.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import {ViewmarksComponent} from './viewmarks/viewmarks.component';
+import {AddmarksComponent} from './addmarks/addmarks.component'
+import { UpdatemarksComponent } from './updatemarks/updatemarks.component';
+import { DeletemarksComponent } from './deletemarks/deletemarks.component';
 
 const routes: Routes = [
   {
@@ -56,7 +60,25 @@ const routes: Routes = [
   {
     path:'users',
     component:ListusersComponent
-  }
+  },
+  {
+    path:"viewmarks",
+    component:ViewmarksComponent
+  },
+
+  {
+  path:"deletemarks",
+  component:DeletemarksComponent
+  },
+  {
+    path:"addmarks",
+    component:AddmarksComponent
+  },
+  {
+    path:"updatemarks",
+    component:UpdatemarksComponent
+  },
+
 ];
 
 @NgModule({

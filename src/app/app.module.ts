@@ -10,7 +10,7 @@ import { ConceptsComponent } from './concepts/concepts.component';
 import { AddclassComponent } from './addclass/addclass.component';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+// import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ViewclassesComponent } from './viewclasses/viewclasses.component';
 import { ViewteachersComponent } from './viewteachers/viewteachers.component';
 import { AddteacherComponent } from './addteacher/addteacher.component';
@@ -24,6 +24,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';  // replaces previous Http service
 import {FlashMessagesModule} from 'angular2-flash-messages';
 import { RouterModule } from '@angular/router';
+import { ViewmarksComponent } from './viewmarks/viewmarks.component';
+import { AddmarksComponent } from './addmarks/addmarks.component';
+import { UpdatemarksComponent } from './updatemarks/updatemarks.component';
+import { DeletemarksComponent } from './deletemarks/deletemarks.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +45,10 @@ import { RouterModule } from '@angular/router';
     AddstudentComponent,
     DashboardComponent,
     LoginComponent,
+    ViewmarksComponent,
+    AddmarksComponent,
+    UpdatemarksComponent,
+    DeletemarksComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +56,7 @@ import { RouterModule } from '@angular/router';
     FontAwesomeModule,
     FormsModule,
     NgbModule,
-    BrowserAnimationsModule,
+    // BrowserAnimationsModule,
     HttpClientModule,RouterModule,
     FlashMessagesModule.forRoot()
   ],

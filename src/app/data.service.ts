@@ -42,6 +42,28 @@ baseUrl="http://localhost:3000/admin/";
     let url=this.baseUrl+ "classes";
     return this.http.get(url,httpOptions);
   }
+  viewmarks(){
+    let url="http://localhost:3000/teacher/marks"
+    return this.http.get(url,httpOptions);
+
+  }
+  addmarks(marks){
+    let body = JSON.stringify(marks);
+    let url="http://localhost:3000/teacher/createmarks"
+    return this.http.post(url,body,httpOptions)
+
+  }
+  updatemarks(data){
+ 
+    let url = "http://localhost:3000/teacher/marks/"+data.marksid+"/number/"+data.marks
+    return this.http.put(url,httpOptions)
+  }
+
+  deletemarks(data){
+    let url =  "http://localhost:3000/teacher/deletemarks/"+data
+    return this.http.delete(url,httpOptions)
+  }
+
    userslist(){
      console.log(httpOptions);
     let url="http://localhost:3000/users";
