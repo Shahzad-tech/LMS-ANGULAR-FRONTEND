@@ -28,6 +28,23 @@
                     </div>
                 </div>
                 <div ngbDropdown class="d-inline-block">
+                    <button class="btn" id="teacher" ngbDropdownToggle>Teacher Management</button>
+                    <div ngbDropdownMenu aria-labelledby="teacher">
+                    <button ngbDropdownItem><a routerLink="addteacher">Add Teacher</a></button>
+                    <button ngbDropdownItem><a routerLink="viewteachers">View Teachers</a></button>
+                    <button ngbDropdownItem>View Teacher</button>
+                    <button ngbDropdownItem>Remove Teacher</button>
+                    <button ngbDropdownItem><a routerLink="addmarks">Add General Marks</a></button>
+                    <button ngbDropdownItem><a routerLink="viewmarks">View General Marks</a></button>
+                    <button ngbDropdownItem><a routerLink="updatemarks">Update General Marks</a></button>
+                    <button ngbDropdownItem><a routerLink="deletemarks">Delete General Marks</a></button>
+                    <button ngbDropdownItem><a routerLink="performance">performance</a></button>
+
+                    </div>
+                </div>
+
+
+                <div ngbDropdown class="d-inline-block">
                     <button class="btn" id="student" ngbDropdownToggle>Student Management</button>
                     <div ngbDropdownMenu aria-labelledby="student">
                         <button ngbDropdownItem><a routerLink="addstudent">Add Student</a></button>

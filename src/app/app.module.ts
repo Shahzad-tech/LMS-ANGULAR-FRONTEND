@@ -28,6 +28,7 @@ import { ViewmarksComponent } from './viewmarks/viewmarks.component';
 import { AddmarksComponent } from './addmarks/addmarks.component';
 import { UpdatemarksComponent } from './updatemarks/updatemarks.component';
 import { DeletemarksComponent } from './deletemarks/deletemarks.component';
+import { PerformanceComponent } from './performance/performance.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { DeletemarksComponent } from './deletemarks/deletemarks.component';
     AddmarksComponent,
     UpdatemarksComponent,
     DeletemarksComponent,
+    PerformanceComponent,
   ],
   imports: [
     BrowserModule,

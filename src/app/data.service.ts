@@ -53,20 +53,30 @@ baseUrl="http://localhost:3000/admin/";
     return this.http.post(url,body,httpOptions)
 
   }
-  updatemarks(data){
+  // updatemarks(data){
  
-    let url = "http://localhost:3000/teacher/marks/"+data.marksid+"/number/"+data.marks
-    return this.http.put(url,httpOptions)
-  }
+  //   let url = "http://localhost:3000/teacher/marks/"+data.marksid+"/number/"+data.marks
+  //   return this.http.put(url,httpOptions)
+  // }
 
   deletemarks(data){
     let url =  "http://localhost:3000/teacher/deletemarks/"+data
     return this.http.delete(url,httpOptions)
   }
 
+  getperformance(){
+
+    let url="http://localhost:3000/perform/reviews"
+    return this.http.get(url,httpOptions);
+
+  }
    userslist(){
      console.log(httpOptions);
     let url="http://localhost:3000/users";
     return this.http.get(url,httpOptions);
   }
+
+  
+
+
   }
